@@ -756,7 +756,9 @@ option{
    .section-title {
         font-size: 2rem;
     }
-    
+    .departments{
+        padding:2%;
+    }
     .departments-grid {
         grid-template-columns: 1fr;
     }
@@ -832,4 +834,5 @@ option{
         gap: 10px;
     }
 }
+
 
