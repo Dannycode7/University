@@ -206,7 +206,7 @@ option{
 .departement-base{
     width: 350px;
     height: 300px;
-        padding: 25px;
+        padding: 10px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
@@ -832,3 +832,4 @@ option{
         gap: 10px;
     }
 }
+
