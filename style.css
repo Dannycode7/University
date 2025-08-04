@@ -283,12 +283,9 @@ option{
     justify-content: center;
 }
 .actualites-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-    padding: 20px;
-    max-width: 1300px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .actualite-card {
@@ -296,7 +293,8 @@ option{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
+    width: 90%;
+    margin-top: 5%;
 }
 
 .actualite-card:hover {
@@ -756,11 +754,13 @@ option{
    .section-title {
         font-size: 2rem;
     }
-    .departments{
-        padding:2%;
+    .section-header{
+        padding: 2%;
+        font-size: 1.3rem;
     }
     .departments-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 10px;
+        width: 90%;
     }
 
      .etudiants-container {
@@ -834,5 +834,3 @@ option{
         gap: 10px;
     }
 }
-
-
