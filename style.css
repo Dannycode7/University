@@ -36,7 +36,8 @@ header{
 .logo img{
     width: 100px;
     height: 40px;
-    margin-top: 3%;
+    margin-top: 6%;
+    object-fit: cover;
 }
 nav ul li{
     display: inline-flex;
@@ -85,6 +86,9 @@ option{
     font-size: 3rem;
 
 }
+button{
+    border: none;
+}
 .hero p{
     display: flex;
     justify-content: center;
@@ -102,9 +106,8 @@ option{
   flex-wrap: wrap; 
 }
 .btn1{
-    width: 150px;
+    width: 140px;
     height: 40px;
-    border-radius: 20px;
      background-color:aliceblue;
   color: black;
 }
@@ -169,6 +172,9 @@ option{
     width: 40%;
     font-size: 1.3rem;
 }
+.about-two p{
+    font-size: 1.1rem;
+}
 .about-one img{
     width: 100%;
 }
@@ -195,6 +201,7 @@ option{
     justify-content: center;
     font-size: 1.4rem;
 }
+
 .departments-conte{
     display: flex;
     justify-content: center;
@@ -203,13 +210,15 @@ option{
     gap: 5%;
     padding: 5%;
 }
+
 .departement-base{
     width: 350px;
     height: 300px;
-        padding: 4px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+        padding: 10px;
+    border-radius: 4px;
+    box-shadow: 30px 4px 10px rgba(0,0,0,0.0.1);
+    margin-top: 4%;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.09);
 }
 .departement-base .card-icon{
     font-size: 5rem;
@@ -286,6 +295,7 @@ option{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 8%;
 }
 
 .actualite-card {
@@ -293,12 +303,8 @@ option{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    width: 90%;
+    width: 23%;
     margin-top: 5%;
-}
-
-.actualite-card:hover {
-    
 }
 
 .actualite-image {
@@ -521,7 +527,16 @@ option{
     transform: translateY(-2px);
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
+.observe-me {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
 
+.observe-me.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .footer {
     background-color: #003366;
     color: white;
@@ -714,7 +729,7 @@ option{
         display: flex;
         justify-content:space-around;
         gap:80px;
-        margin-top: 1%;
+        margin-top: 0%;
         position: relative;
         z-index: 1002;
     }
@@ -760,9 +775,12 @@ option{
     }
     .departments-grid {
         grid-template-columns: 10px;
-        width: 90%;
     }
+    .departement-base{
+        width: 95%;
+        padding: 2%;
 
+    }
      .etudiants-container {
         flex-direction: column;
     }
@@ -770,6 +788,13 @@ option{
     .etudiants-image {
         order: -1;
         margin-bottom: 30px;
+    }
+    .actualites-grid{
+        flex-wrap: wrap;
+    }
+    .actualite-card{
+        width: 90%;
+
     }
     .nbr-i{
         width: 25%;
@@ -834,4 +859,3 @@ option{
         gap: 10px;
     }
 }
-
