@@ -155,10 +155,11 @@ function renderDepartments() {
     const container = document.getElementById('departments-container');
     
     departments.forEach(dept => {
-        const card = document.createElement('div');
-        card.innerHTML = `
+        const card2 = document.createElement('div');
+         card2.className = 'departement-haut';
+        card2.innerHTML = `
             <div class="departement-base">
-            <div class="card-icon" style="background-color: ${dept.color}20; border-color: ${dept.color}">
+            <div class="card-icon" 20; border-color: ${dept.color}">
                 <i class="fas ${dept.icon}" style="color: ${dept.color}"></i>
             </div>
             <h3 style="color: ${dept.color}">${dept.title}</h3>
@@ -166,7 +167,7 @@ function renderDepartments() {
             <a href="#" class="cta-button" style="background-color: ${dept.color}">En savoir plus <i class="fas fa-arrow-right"></i></a>
             </div>
         `;
-        container.appendChild(card);
+        container.appendChild(card2);
     });
 }
 
@@ -178,7 +179,7 @@ const actualites = [
         titre: "Forum des Métiers 2023",
         resume: "Notre forum annuel réunira 50 entreprises leaders pour des opportunités de stage et d'emploi. Inscriptions ouvertes jusqu'au 10 octobre.",
         image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        lien: "/forum-metiers-2023"
+        lien: "#"
     },
     {
         date: "10 Oct 2023",
@@ -186,7 +187,7 @@ const actualites = [
         titre: "Lab IA: Nouveaux Équipements",
         resume: "Le département Informatique a acquis 10 stations de travail NVIDIA DGX pour la recherche en intelligence artificielle.",
         image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        lien: "/nouveaux-equipements-ia"
+        lien: "#"
     },
     {
         date: "5 Oct 2023",
@@ -194,7 +195,7 @@ const actualites = [
         titre: "Réforme LMD: Ce Qui Change",
         resume: "Découvrez les nouvelles modalités d'évaluation pour l'année universitaire 2023-2024 approuvées par le conseil scientifique.",
         image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        lien: "/reforme-lmd-2023"
+        lien: "#"
     }
 ]
 
@@ -219,3 +220,20 @@ function afficherActualites() {
 }
 
 afficherActualites();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elementsToObserve = document.querySelectorAll('.observe-me');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // On arrête d'observer une fois que l'action est déclenchée
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  elementsToObserve.forEach(el => observer.observe(el));
+});
