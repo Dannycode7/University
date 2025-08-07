@@ -123,13 +123,13 @@ const departments = [
         icon: "fa-user-md",
         title: "Médecine",
         description: "Études médicales préparant à devenir médecin, avec spécialisations possibles en chirurgie, pédiatrie, cardiologie et autres disciplines médicales.",
-        color: "#dc2626"
+        color: "#059669"
     },
     {
         icon: "fa-gavel",
         title: "Droit",
         description: "Formation complète en droit civil, pénal, des affaires et international. Préparation aux carrières d'avocat, juge, juriste d'entreprise.",
-        color: "#7c3aed"
+        color: "#2563eb"
     },
     {
         icon: "fa-cogs",
@@ -141,13 +141,13 @@ const departments = [
         icon: "fa-chart-line",
         title: "Économie-Gestion",
         description: "Étude des marchés, de la comptabilité, du management et de la finance. Débouchés en banque, audit, création d'entreprise et gestion d'organisations.",
-        color: "#d97706"
+        color: "#2563eb"
     },
     {
         icon: "fa-brain",
         title: "Sciences Humaines",
         description: "Exploration de la psychologie, sociologie, histoire et philosophie. Compréhension des sociétés humaines et débouchés variés dans l'éducation et la recherche.",
-        color: "#9333ea"
+         color: "#059669"
     }
 ];
 
