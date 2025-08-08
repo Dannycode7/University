@@ -237,3 +237,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   elementsToObserve.forEach(el => observer.observe(el));
 });
+
+ const menu = document.querySelector('.menu-dropdown');
+
+  menu.addEventListener('click', function (e) {
+    e.stopPropagation();
+    this.classList.toggle('active');
+  });
+
+  document.addEventListener('click', function () {
+    menu.classList.remove('active');
+  });
+
+
+
+ajouterActualites();
+//   ---------------------------------------> deuxiemes actualites 
