@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js"defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROUjq979zODpigjm5BDT9cBKOzZpxHJ2FSaA&s" alt="">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#Departs">Facultés</a></li>
+                    <li class="menu-dropdown">
+                            Étudiants
+                        <ul class="menu-options">
+                            <li><a href="university.html">Actualités</a></li>
+                            <li><a href="inscription.html">Inscription</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="index.html#contact">Contacts</a></li>
+                </ul>
+            </nav>
+              <span id="span"><i class="fa-solid fa-bars"></i></span>
+            <span class="spant" id="spant"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="hero-center">
+            <p id="H"></p>
+             <div class="hero">
+                <h1>Bienvennue a l'universite lumieres</h1>
+                <p>Inscrivez vous a l'universite lumiere</p>
+                <div class="button">
+        
+                 <button class="btn2">Home</button> <button class="btn1">Login</button>
+           </div>
+        </div>
+        </div>
+            </div>
+    </header>
+    <main class="admission-container">
+    <h1 class="admission-title">Formulaire d'Admission</h1>
+    
+    <form class="admission-form" action="#" method="POST" enctype="multipart/form-data">
+
+        <!-- Infos personnelles -->
+        <fieldset class="form-section">
+            <legend>Infos personnelles</legend>
+            <div class="form-group">
+                <label>Nom complet <span class="required">*</span></label>
+                <input type="text" name="nom" placeholder="Votre nom complet" required>
+            </div>
+            <div class="form-group">
+                <label>E-mail <span class="required">*</span></label>
+                <input type="email" name="email" placeholder="Votre adresse mail" required>
+            </div>
+            <div class="form-group">
+                <label>Téléphone <span class="required">*</span></label>
+                <input type="tel" name="telephone" placeholder="Votre numéro" required>
+            </div>
+        </fieldset>
+
+        
+        <fieldset class="form-section">
+            <legend>Adresse</legend>
+            <div class="form-group">
+                <label>Ville <span class="required">*</span></label>
+                <input type="text" name="ville" placeholder="Votre ville" required>
+            </div>
+            <div class="form-group">
+                <label>Pays <span class="required">*</span></label>
+                <select name="pays" required>
+                    <option value="">Sélectionner</option>
+                    <option value="RDC">République Démocratique du Congo</option>
+                    <option value="FR">France</option>
+                    <option value="BE">Belgique</option>
+                </select>
+            </div>
+        </fieldset>
+
+        
+        <fieldset class="form-section">
+            <legend>Études</legend>
+            <div class="form-group">
+                <label>Niveau d'étude <span class="required">*</span></label>
+                <select name="niveau" required>
+                    <option value="">Sélectionner</option>
+                    <option value="bac">Bac</option>
+                    <option value="licence">Licence</option>
+                    <option value="master">Master</option>
+                </select>
+            </div>
+        </fieldset>
+
+  
+        <fieldset class="form-section">
+            <legend>Photo</legend>
+            <div class="form-group">
+                <label>Photo (jpg/png) <span class="required">*</span></label>
+                <input type="file" name="photo" accept="image/*" required>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Soumettre</button>
+    </form>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Université Lumière</h3>
+            <p>Fondée en 2015, l'Université Lumière s'engage à fournir une éducation de qualité et à former les leaders de demain.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Departs">Facultés</a></li>
+                <li><a href="#">Etudiants</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contacts</h3>
+            <p><i class="fas fa-map-marker-alt"></i> AV: Baraka 20983, Goma, RDC</p>
+            <p><i class="fas fa-phone"></i> +243 909373030</p>
+            <p><i class="fas fa-envelope"></i> lumiere@gmail.com</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Abonnez-vous à notre newsletter pour recevoir les dernières actualités.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Université Lumière. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Conditions d'utilisation</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
