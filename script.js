@@ -67,7 +67,7 @@ let interval = setInterval(() => {
     if (equa > max) {
         clearInterval(interval); 
     }
-}, 100); 
+}, 1000); 
 let etudiants=document.getElementById("etud");
 let etude=0;
 let max_etu=1800;
@@ -77,7 +77,7 @@ let interval2=setInterval(()=>{
     if(etude>max_etu){
         clearInterval(interval2)
     }
-},1)
+},5)
 
 let facultes=document.getElementById("fac");
 let fac=0;
@@ -88,7 +88,7 @@ let interval3=setInterval(()=>{
     if(fac>fac_tot){
         clearInterval(interval3);
     }
-},400)
+},1000)
 let anne=document.querySelector(".anne");
 let ans=0;
 let ans_f=10;
@@ -99,7 +99,7 @@ let interval4=setInterval(()=>{
         clearInterval(interval4)
     }
 
-},600)
+},1000)
 let anne2=document.getElementById("annet");
 let ans2=0;
 let ans_f2=10;
@@ -110,7 +110,7 @@ let interval42=setInterval(()=>{
         clearInterval(interval42)
     }
 
-},600)
+},1000)
 
 const departments = [
     {
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // On arrête d'observer une fois que l'action est déclenchée
+        observer.unobserve(entry.target); 
       }
     });
   }, {
@@ -238,18 +238,29 @@ document.addEventListener("DOMContentLoaded", function () {
   elementsToObserve.forEach(el => observer.observe(el));
 });
 
- const menu = document.querySelector('.menu-dropdown');
+document.addEventListener("DOMContentLoaded", function() {
+    // Votre code existant pour les dropdowns
+    const dropdowns = document.querySelectorAll('.menu-dropdown');
 
-  menu.addEventListener('click', function (e) {
-    e.stopPropagation();
-    this.classList.toggle('active');
-  });
+    if (dropdowns.length > 0) {
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                // Fermer les autres dropdowns
+                dropdowns.forEach(d => {
+                    if (d !== this) d.classList.remove('active');
+                });
 
-  document.addEventListener('click', function () {
-    menu.classList.remove('active');
-  });
+                // Basculer l'état du dropdown cliqué
+                this.classList.toggle('active');
+            });
+        });
 
-
-
-ajouterActualites();
+        // Fermer tous les dropdowns si on clique ailleurs
+        document.addEventListener('click', function() {
+            dropdowns.forEach(d => d.classList.remove('active'));
+        });
+    }
+});
 //   ---------------------------------------> deuxiemes actualites 
