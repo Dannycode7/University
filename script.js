@@ -43,6 +43,7 @@ window.addEventListener('scroll', function() {
 let Hamberguer=document.getElementById("span");
 let croix=document.getElementById("spant");
 let nav=document.getElementById("nav");
+const closeMenu = document.getElementById("spant");
 Hamberguer.addEventListener('click', function(){
    Hamberguer.classList.add('active');
     croix.style.display="block";
@@ -55,6 +56,13 @@ croix.addEventListener('click',function(){
     croix.style.display="none";
     nav.classList.remove('active');
 })
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+    closeMenu.style.display = "none";
+    openMenu.style.display = "inline";
+  });
+});
 // ------------------> randomer
 let personnel = document.getElementById("perso");
 let equa = 0;
@@ -264,4 +272,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 //   ---------------------------------------> deuxiemes actualites 
+
 
