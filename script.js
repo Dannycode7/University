@@ -1,9 +1,9 @@
 let background=[
     {
         img: "https://storage.letudiant.fr/mediatheque/letudiant/7/3/2593773-adobestock-402256321-766x438.jpeg",
-        h1: "Bienvenue à l'Université Lumière",
+        h1: "Bienvenue à l'Université de Kananga",
         p: "Explorez un univers de savoir, d'excellence académique et d'innovations qui façonnent l’avenir.",
-        H:"Pourquoi Choisir l'Université Lumière ?"
+        H:"Pourquoi Choisir l'Université de Kananga ?"
     },
     {
         img: "https://i.pinimg.com/1200x/7d/a7/8e/7da78eaf58649c7fe1e4cf7e5dc575d5.jpg",
@@ -264,3 +264,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 //   ---------------------------------------> deuxiemes actualites 
+
