@@ -37,7 +37,7 @@ header{
     left: 0;
     transition: all 0.3s ease;
     z-index: 1000;
-    height: 70px;
+    height: 50px;
     margin: 0%;
 }
 .logo img{
@@ -49,7 +49,7 @@ header{
 nav ul li{
     display: inline-flex;
     width: 130px;
-    margin-top: 4%;
+    margin-top: 2%;
     cursor: pointer;
 }
 nav ul li:hover{
@@ -165,7 +165,7 @@ span{
 .hero h1{
     display: flex;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 button{
@@ -174,7 +174,7 @@ button{
 .hero p{
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .contenair{
       min-height: 150vh;
@@ -1162,6 +1162,7 @@ input:focus, select:focus {
     font-size: 1rem;
    }
 }
+
 
 
 
