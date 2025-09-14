@@ -257,7 +257,7 @@ img{
 }
 .about-two{
     width: 33%;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     padding: 2%;
 }
 .about-two p{
@@ -1163,5 +1163,6 @@ input:focus, select:focus {
     font-size: 1rem;
    }
 }
+
 
 
