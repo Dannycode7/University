@@ -299,7 +299,7 @@ img{
 }
 
 .departement-base{
-    width: 350px;
+    width: 310px;
     height: 350px;
         padding: 10px;
     border-radius: 10px;
@@ -1162,6 +1162,7 @@ input:focus, select:focus {
     font-size: 1rem;
    }
 }
+
 
 
 
