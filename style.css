@@ -174,7 +174,7 @@ button{
 .hero p{
     display: flex;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .contenair{
       min-height: 150vh;
@@ -257,7 +257,6 @@ img{
 }
 .about-two{
     width: 33%;
-    font-size: 1rem;
     padding: 2%;
 }
 .about-two p{
@@ -1163,6 +1162,7 @@ input:focus, select:focus {
     font-size: 1rem;
    }
 }
+
 
 
 
