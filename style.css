@@ -213,7 +213,7 @@ button{
     /* margin-top: 2%; */
     height: 65vh;
     gap: 3%;
-    padding: 5%;
+    padding: 2%;
 }
 .about-centero{
     display: flex;
@@ -257,10 +257,10 @@ img{
 }
 .about-two{
     width: 33%;
-    padding: 2%;
+    padding: 1%;
 }
 .about-two p{
-    font-size: 1rem;
+    font-size: 13px;
 }
 .about-one img{
     width: 100%;
@@ -1162,6 +1162,7 @@ input:focus, select:focus {
     font-size: 1rem;
    }
 }
+
 
 
 
